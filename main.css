@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.grid {
+
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(134, 182, 37);
+  grid-column: 1 / span 1;
+  grid-row: 1 /span 2;
+  margin-top: 100px;
+  margin-inline: auto;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+  grid-column: 2 / span 1;
+  grid-row: 2 /span 1;
+}
+
+.mini-grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.info {
+  margin-block: 100px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  > h3 {
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+
+  }
+
+  #start__button {
+    font-size: .8125rem;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: yellowgreen;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: rgb(89, 127, 12);
+    }
+  }
+}
+
+
+
+
+.tetromino {
+  background: orangered;
+}
